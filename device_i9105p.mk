@@ -3,33 +3,33 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/i9082/i9082-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/i9105p/i9105p-vendor.mk)
 
 # Use high-density artwork where available
 PRODUCT_LOCALES += hdpi
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/i9082/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/i9105p/overlay
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/init.capri_ss_baffin.rc:root/init.capri_ss_baffin.rc \
-	device/samsung/i9082/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
-	device/samsung/i9082/init.log.rc:root/init.log.rc \
-	device/samsung/i9082/init.recovery.capri_ss_baffin.rc:root/init.recovery.capri_ss_baffin.rc \
-	device/samsung/i9082/lpm.rc:root/lpm.rc \
-	device/samsung/i9082/ueventd.capri_ss_baffin.rc:root/ueventd.capri_ss_baffin.rc \
-	device/samsung/i9082/fstab.capri_ss_baffin:root/fstab.capri_ss_baffin \
+	device/samsung/i9105p/init.capri_ss_baffin.rc:root/init.capri_ss_baffin.rc \
+	device/samsung/i9105p/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
+	device/samsung/i9105p/init.log.rc:root/init.log.rc \
+	device/samsung/i9105p/init.recovery.capri_ss_s2vep.rc:root/init.recovery.capri_ss_s2vep.rc \
+	device/samsung/i9105p/lpm.rc:root/lpm.rc \
+	device/samsung/i9105p/ueventd.capri_ss_baffin.rc:root/ueventd.capri_ss_baffin.rc \
+	device/samsung/i9105p/fstab.capri_ss_baffin:root/fstab.capri_ss_baffin \
 
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/vold.fstab:system/etc/vold.fstab \
+	device/samsung/i9105p/vold.fstab:system/etc/vold.fstab \
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
-	device/samsung/i9082/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
-	device/samsung/i9082/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	device/samsung/i9082/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
-	device/samsung/i9082/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
+	device/samsung/i9105p/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	device/samsung/i9105p/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	device/samsung/i9105p/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	device/samsung/i9105p/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	device/samsung/i9105p/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -110,5 +110,5 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_i9082
-PRODUCT_DEVICE := i9082
+PRODUCT_NAME := full_i9105p
+PRODUCT_DEVICE := i9105p
