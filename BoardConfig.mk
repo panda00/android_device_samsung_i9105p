@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/i9082/BoardConfigVendor.mk
+-include vendor/samsung/i9105p/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -26,7 +26,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404019200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_i9082_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_i9105p_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
