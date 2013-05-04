@@ -237,10 +237,24 @@ on boot
     # phone
     setprop ro.telephony.call_ring.multiple 0
 
-    # create data/gps for GPS demon
+    # create data/gps for GPS daemon
     mkdir /data/gps 0770 gps system
     chown gps system /data/gps
     chmod 0770 /data/gps
+
+    # NFC
+    setprop ro.nfc.port "I2C"
+    chmod 0666 /dev/bcm2079x
+    chown nfc nfc /dev/bcm2079x
+    mkdir /data/bcmnfc
+    mkdir /data/bcmnfc/param
+    copy /system/etc/route.xml /data/bcmnfc/param/route.xml
+    chmod 0755 /data/bcmnfc
+    chmod 0755 /data/bcmnfc/param
+    chmod 0755 /data/bcmnfc/param/route.xml
+    chown nfc nfc /data/bcmnfc
+    chown nfc nfc /data/bcmnfc/param
+    chown nfc nfc /data/bcmnfc/param/route.xml
 
     #for GPS files
     write /sys/class/gpio/export 99
