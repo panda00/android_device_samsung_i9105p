@@ -8,17 +8,15 @@ persist.brcm.ap_crash=none
 rild.libpath=/system/lib/libbrcm_ril.so
 #rild.libargs=-d /dev/ttyS0
 ro.sf.lcd_density=240
-ro.lcd_brightness=123
+ro.lcd_brightness=180
 ro.lcd_min_brightness=20
 
 # MultiTouch support
 ro.product.multi_touch_enabled=true
 ro.product.max_num_touch=2
 
-# system prop for FM Radio SNR
-#
-service.brcm.fm.start_snr=41
-service.brcm.fm.stop_snr=20
+# Prevent HDMI from locking UI to landscape
+hdmi.orientation.locked=false
 
 ro.tvout.enable=true
 

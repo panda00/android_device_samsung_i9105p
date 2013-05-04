@@ -17,4 +17,4 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-i9105
 
 #Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=baffinvj TARGET_DEVICE=baffin BUILD_FINGERPRINT=samsung/baffinvj/baffin:4.1.2/JZO54K/i9105LDCAMC2:user/release-keys PRIVATE_BUILD_DESC="baffinvj-user 4.1.2 JZO54K i9105LDCAMC2 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=s2vepxx TARGET_DEVICE=s2vep BUILD_FINGERPRINT=samsung/s2vepxx/s2vep:4.1.2/JZO54K/I9105XXAMB9:user/release-keys PRIVATE_BUILD_DESC="s2vepxx-user 4.1.2 JZO54K I9105XXAMB9 release-keys"
