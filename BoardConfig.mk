@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/i9105/BoardConfigVendor.mk
+-include vendor/samsung/i9105p/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -26,7 +26,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404019200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/i9105
+TARGET_KERNEL_SOURCE := kernel/samsung/i9105p
 TARGET_KERNEL_CONFIG := cyanogenmod_i9105_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -65,7 +65,7 @@ BOARD_USES_SKTEXTBOX := true
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/i9105/egl.cfg
+BOARD_EGL_CFG := device/samsung/i9105p/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
 
@@ -77,4 +77,4 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/i9105/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/i9105p/ril/
