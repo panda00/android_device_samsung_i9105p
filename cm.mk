@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := GalaxyS2Plus
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/i9105/device_i9105.mk)
+$(call inherit-product, device/samsung/i9105/device_i9105p.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9105
