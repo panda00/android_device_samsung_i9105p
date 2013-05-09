@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=samsung
-DEVICE=i9105
+DEVICE=i9105p
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 
