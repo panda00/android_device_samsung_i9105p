@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_i9105p.mk
+    $(LOCAL_DIR)/device_i9105P.mk

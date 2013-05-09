@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/i9105p/BoardConfigVendor.mk
+-include vendor/samsung/i9105P/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -13,7 +13,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := capri
 
-BOARD_KERNEL_CMDLINE := "console=ttyS0,115200n8 mem=128M"
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 mem=478M@0xA2000000 mem=352M@0xC0000000 androidboot.console=ttyS0 vc-cma-mem=0/112M@0xCF000000
 BOARD_KERNEL_BASE := 0x50000000
 BOARD_KERNEL_PAGESIZE := 4096
 
@@ -26,8 +26,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404019200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/i9105p
-TARGET_KERNEL_CONFIG := cyanogenmod_i9105_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/i9105P
+TARGET_KERNEL_CONFIG := cyanogenmod_i9105P_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -35,8 +35,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9105/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9105/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9105P/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9105P/libbt_vndcfg.txt
 
 # Connectivity - Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -65,7 +65,7 @@ BOARD_USES_SKTEXTBOX := true
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/i9105p/egl.cfg
+BOARD_EGL_CFG := device/samsung/i9105P/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
 
@@ -77,4 +77,4 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/i9105p/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/i9105P/ril/

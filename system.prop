@@ -1,5 +1,5 @@
 #
-# system.prop for i9105
+# system.prop for i9105P
 #
 persist.brcm.log=none
 persist.brcm.cp_crash=none
