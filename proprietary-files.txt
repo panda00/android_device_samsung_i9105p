@@ -66,8 +66,8 @@ etc/sensors.conf
 etc/somxreg.conf
 etc/srm.bin
 etc/Volume.db
-etc/wifi/bcmdhd_apsta.bin_b2
-etc/wifi/bcmdhd_sta.bin_b2
+etc/wifi/bcmdhd_apsta.bin
+etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_net.txt
 etc/wifi/wpa_supplicant.conf
 lib/hw/alsa.default.so
