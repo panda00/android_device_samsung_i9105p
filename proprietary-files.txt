@@ -88,6 +88,8 @@ lib/libat.so
 lib/libat_stubs.so
 lib/libatlog.so
 lib/libaudiopolicy_sec.so
+lib/libdvm.so
+lib/libdwp.so
 lib/libbrcm_ril.so
 lib/libbrcmaacenc.so
 lib/libbrcmamrnbaridec.so
@@ -105,6 +107,9 @@ lib/libbufmgmt.so
 lib/libbufpool.so
 lib/libcapi2.so
 lib/libcate_rpc.so
+lib/libc.so
+lib/libcutils.so
+lib/libcuuc.so
 lib/libcodec_util.so
 lib/libcontainers.so
 lib/libcontrolcsc.so
@@ -118,6 +123,7 @@ lib/libhdmiaudio.so
 lib/libI420colorconvert.so
 lib/libImmVibeJ.so
 lib/libinvensense_hal.so
+lib/libicui18n.so
 lib/libINVOKER.so
 lib/libmllite.so
 lib/libmlplatform.so
@@ -126,6 +132,9 @@ lib/libmmal_components.so
 lib/libmmal_util.so
 lib/libmmal_vc.so
 lib/libmplmpu.so
+lib/nfc_jni.so
+lib/nfc-nci.so
+lib/NODEJS_Android.so
 lib/libomadrm.so
 lib/libOMX.brcm.audio.aac.decoder.so
 lib/libOMX.brcm.audio.aac.encoder.so
@@ -175,6 +184,7 @@ lib/libspyhook.so
 lib/libstagefrighthw.so
 lib/libstagefrighthw_a.so
 lib/libsthmb.so
+lib/libsvoxtts.so
 lib/libtvservice.so
 lib/libtvservice_binder.so
 lib/libuecodec.so
